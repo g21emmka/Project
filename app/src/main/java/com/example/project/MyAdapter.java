@@ -7,7 +7,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyAdapter extends RecyclerView.Adapter <MyViewHolder> {
+
+    List<Animals> animals = new ArrayList<>();
+
+    public void setAnimals(List<Animals> animals) {
+        this.animals = animals;
+    }
 
     @NonNull
     @Override
@@ -18,11 +27,18 @@ public class MyAdapter extends RecyclerView.Adapter <MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        //holder.name.setText(animals.getName());
+        //holder.location.setText(animals.getLocation());
+
+        holder.name.setText(animals.get(position).getName());
+        holder.location.setText(animals.get(position).getLocation());
+        holder.auxdata.setText(animals.get(position).getAuxdata());
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return animals.size();
     }
 }

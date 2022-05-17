@@ -7,7 +7,10 @@ import android.view.View;
 import android.widget.TextView;
 
         public class MyViewHolder extends RecyclerView.ViewHolder{
+
         public TextView name;
+        public TextView location;
+        public TextView auxdata;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
