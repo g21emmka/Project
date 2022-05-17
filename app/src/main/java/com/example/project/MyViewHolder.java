@@ -10,11 +10,13 @@ import android.widget.TextView;
 
         public TextView name;
         public TextView location;
-        public TextView auxdata;
+        public TextView info;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.animal_name);
+            location = itemView.findViewById(R.id.animal_location);
+            info = itemView.findViewById(R.id.animal_size);
         }
     }
 
