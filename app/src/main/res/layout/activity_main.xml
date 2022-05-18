@@ -30,7 +30,7 @@
         android:layout_marginLeft="20dp"/>
 
     <Button
-        android:id="@+id/button_toAboutPage"
+        android:id="@+id/button_aboutpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="About"

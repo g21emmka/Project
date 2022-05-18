@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.gson.Gson;
 
@@ -15,6 +18,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements JsonTask.JsonTaskListener{
 
     RecyclerView recyclerView;
+
+    private Button aboutpage;
 
     private MyAdapter adapter;
 
@@ -31,6 +36,16 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager( this));
+
+        aboutpage = findViewById(R.id.button_aboutpage);
+        aboutpage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, About.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
