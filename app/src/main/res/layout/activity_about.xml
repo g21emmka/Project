@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
-        android:textColor="#E1C699"
+        android:textColor="#6200ea"
         />
 
     <TextView
