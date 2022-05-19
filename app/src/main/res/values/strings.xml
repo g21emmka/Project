@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Project</string>
-    <string name="about_text">This is an app about wild animals and some information about them. This app is for anyone who wants to read more
-            about wild animals and learn more about them.</string>
+    <string name="about_text"> Do you want to brilliance with cutting-edge knowledge of some selected
+        wild animals, such as where in the world they are located or how big they can get?\n
+        \nThe information you can find in this app can be used for quizzes, if you just want to learn more
+        or if you need to find a fun and interesting topic to talk about.\n
+        \nOn this app you can find short and fun information that you or your friends may not have known before.
+        This app works for everyone and for all occasions, because who does not want to expand their knowledge?
+    </string>
 
 </resources>
