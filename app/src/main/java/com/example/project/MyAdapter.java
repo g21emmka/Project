@@ -31,8 +31,6 @@ public class MyAdapter extends RecyclerView.Adapter <MyViewHolder> {
         holder.name.setText(animals.get(position).getName());
         holder.location.setText(animals.get(position).getLocation());
         holder.info.setText(animals.get(position).getAuxdata());
-
-
     }
 
     @Override
